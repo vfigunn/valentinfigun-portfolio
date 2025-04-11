@@ -136,7 +136,7 @@ const Index = () => {
         
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
           <a href="#about" aria-label="Scroll down">
-            <ArrowDown size={24} className="text-blue-500" />
+            <ArrowDown size={24} className="text-transparent md:text-blue-500" />
           </a>
         </div>
       </section>
