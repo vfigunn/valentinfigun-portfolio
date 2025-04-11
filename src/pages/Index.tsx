@@ -28,7 +28,7 @@ const Index = () => {
     {
       title: 'Óptica Figún',
       description: '​Sitio web informativo para una óptica familiar, que destaca sus servicios, horarios y medios de contacto.',
-      image: './images/opticafigun.png',
+      image: '/images/opticafigun.png',
       technologies: ['React', 'Typescript', 'Tailwind CSS'],
       demoUrl: 'https://www.opticafigun.com.ar/',
       repoUrl: 'https://github.com/vfigunn/opticafigun'
@@ -36,7 +36,7 @@ const Index = () => {
     {
       title: 'EnGualeguaychú',
       description: 'Plataforma creada con la intención de informar y dar a conocer comercios locales Gualeguaychú.',
-      image: './images/engualeguaychu.png',
+      image: '/images/engualeguaychu.png',
       technologies: ['React', 'Tailwind CSS', 'Typescript'],
       demoUrl: 'https://engualeguaychu.vercel.app/',
       repoUrl: 'https://github.com/vfigunn/engualeguaychu'
@@ -44,7 +44,7 @@ const Index = () => {
     {
       title: 'Instituto Sedes Sapientiae',
       description: 'Sitio web institucional para un establecimiento educativo con información académica.',
-      image: './images/sedessapientiae.png',
+      image: '/images/sedessapientiae.png',
       technologies: ['React', 'Tailwind', 'Typescript'],
       demoUrl: 'https://sedessapientiae.vercel.app/',
       repoUrl: 'https://github.com/vfigunn/sedessapientiae'
@@ -52,7 +52,7 @@ const Index = () => {
     {
       title: 'Asukeai',
       description: 'Sitio web creado con el objetivo de difundir los eventos culutrales que se realizan en Asunción Paraguay.',
-      image: './images/asukeai.png',
+      image: '/images/asukeai.png',
       technologies: ['React', 'Tailwind', 'Typescript'],
       demoUrl: 'https://asukeai.vercel.app/',
       repoUrl: 'https://github.com/vfigunn/asukeai'
@@ -126,7 +126,7 @@ const Index = () => {
           <div className="lg:w-1/2 flex justify-center lg:justify-end">
             <div className="w-44 h-44 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
               <img 
-                src="images/yo.png" 
+                src="/images/yo.png" 
                 alt="Valentín Figun" 
                 className="w-full h-full object-cover object-[65%_35%]"
               />
