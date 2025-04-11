@@ -3,6 +3,9 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
+
+
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -40,7 +43,7 @@ const Header = () => {
     <header 
       className={cn(
         'fixed w-full z-50 transition-all duration-300',
-        scrolled ? 'bg-white/90 shadow-md backdrop-blur-md py-2' : 'bg-transparent py-4'
+        scrolled ? 'bg-white/90 shadow-md backdrop-blur-md py-2' : 'bg-white md:bg-transparent py-4'
       )}
     >
       <div className="container mx-auto px-4">
@@ -53,16 +56,17 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:block">
-            <ul className="flex space-x-6">
+            <ul className="flex space-x-6 items-center">
               {navLinks.map((link) => (
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="font-medium hover:text-blue-500 transition-colors"
+                    className="font-bold hover:text-blue-500 transition-colors"
                   >
                     {link.name}
                   </a>
                 </li>
+                
               ))}
             </ul>
           </nav>
@@ -85,7 +89,7 @@ const Header = () => {
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="font-medium hover:text-blue-500 block py-1"
+                    className="font-bold hover:text-blue-500 block py-1"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {link.name}

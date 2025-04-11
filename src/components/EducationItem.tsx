@@ -5,8 +5,8 @@ import { GraduationCap, Calendar } from 'lucide-react';
 export interface EducationProps {
   institution: string;
   degree: string;
-  period: string;
-  location: string;
+  period?: string;
+  location?: string;
   description?: string;
 }
 
@@ -27,7 +27,6 @@ const EducationItem = ({
         <h3 className="text-xl font-bold text-gray-900">{degree}</h3>
         <div className="flex flex-wrap items-center gap-2 mb-2">
           <span className="font-medium text-blue-600">{institution}</span>
-          <span className="text-gray-500">|</span>
           <span className="text-gray-500">{location}</span>
         </div>
         

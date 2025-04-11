@@ -15,9 +15,9 @@ const Footer = () => {
               <span>Valentín Figun</span>
               <span className="ml-1">/&gt;</span>
             </h3>
-            <p className="text-gray-300 mb-4">
+            {/* <p className="text-gray-300 mb-4">
               Desarrollador web de Gualeguaychú, Entre Ríos, Argentina.
-            </p>
+            </p> */}
           </div>
           
           <div>
@@ -25,7 +25,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><a href="#home" className="text-gray-300 hover:text-blue-300 transition">Inicio</a></li>
               <li><a href="#projects" className="text-gray-300 hover:text-blue-300 transition">Proyectos</a></li>
-              <li><a href="#skills" className="text-gray-300 hover:text-blue-300 transition">Tecnologías</a></li>
+              <li><a href="#education" className="text-gray-300 hover:text-blue-300 transition">Educación</a></li>
               <li><a href="#contact" className="text-gray-300 hover:text-blue-300 transition">Contacto</a></li>
             </ul>
           </div>
@@ -34,7 +34,7 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4">Conéctate</h3>
             <div className="flex space-x-4">
               <a 
-                href="https://github.com/valentinfigun" 
+                href="https://github.com/vfigunn" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white transition"
@@ -43,7 +43,7 @@ const Footer = () => {
                 <Github className="w-6 h-6" />
               </a>
               <a 
-                href="https://www.linkedin.com/in/valentin-figun/" 
+                href="https://www.linkedin.com/in/valentinfigun/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white transition"
@@ -52,7 +52,7 @@ const Footer = () => {
                 <Linkedin className="w-6 h-6" />
               </a>
               <a 
-                href="https://www.instagram.com/valentinfigun/" 
+                href="https://www.instagram.com/vfigun/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white transition"
@@ -62,7 +62,7 @@ const Footer = () => {
               </a>
             </div>
             <p className="mt-4 text-gray-400">
-              valentinfigun@gmail.com
+              vfigun@gmail.com
             </p>
           </div>
         </div>

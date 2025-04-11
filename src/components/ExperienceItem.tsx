@@ -7,7 +7,7 @@ export interface ExperienceProps {
   company: string;
   period: string;
   description: string[];
-  location: string;
+  location?: string;
 }
 
 const ExperienceItem = ({
@@ -25,7 +25,6 @@ const ExperienceItem = ({
         <h3 className="text-xl font-bold text-gray-900">{title}</h3>
         <div className="flex flex-wrap items-center gap-2 mb-2">
           <span className="font-medium text-blue-600">{company}</span>
-          <span className="text-gray-500">|</span>
           <span className="text-gray-500">{location}</span>
         </div>
         
