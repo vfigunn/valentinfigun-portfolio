@@ -10,10 +10,10 @@ interface TechIconProps {
 const TechIcon = ({ icon: Icon, name }: TechIconProps) => {
   return (
     <div className="flex flex-col items-center p-4 transition-transform duration-300 hover:scale-110">
-      <div className="w-16 h-16 flex items-center justify-center mb-2 text-blue-500 dark:text-blue-400">
+      <div className="w-16 h-16 flex items-center justify-center mb-2 text-blue-500">
         <Icon size={48} strokeWidth={1.5} />
       </div>
-      <span className="font-medium dark:text-gray-200">{name}</span>
+      <span className="font-medium">{name}</span>
     </div>
   );
 };
