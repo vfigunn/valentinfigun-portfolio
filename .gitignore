@@ -7,18 +7,44 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
+
+# Build outputs
 dist
 dist-ssr
+build
+out
+.eslintcache
+tsconfig.tsbuildinfo
+
+# Local env files
+.env
+.env.*
+!.env.example
 *.local
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
+!.vscode/settings.json
 .idea
 .DS_Store
+Thumbs.db
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# AI Agents & User specific files
+.agents/
+.gemini/
+.claude/
+.kiro/
+.cline/
+.cursor/
+.codebuddy/
+.continue/
+.junie/
+proyects_list.md

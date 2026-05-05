@@ -18,27 +18,32 @@ const EducationItem = ({
   description
 }: EducationProps) => {
   return (
-    <div className="mb-8 relative pl-8 before:absolute before:left-0 before:top-2 before:bottom-0 before:w-0.5 before:bg-blue-200">
-      <div className="absolute left-0 top-2 w-4 h-4 rounded-full bg-blue-500 -translate-x-1.5 flex items-center justify-center">
-        <GraduationCap size={12} className="text-white" />
+    <div className="group h-full bg-white/50 dark:bg-slate-900/40 backdrop-blur-sm border border-slate-200/60 dark:border-slate-800/60 rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-md dark:shadow-none hover:border-blue-500/30 transition-all duration-300">
+      <div className="w-12 h-12 rounded-xl bg-blue-50 dark:bg-blue-500/10 flex items-center justify-center mb-6 text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform duration-300">
+        <GraduationCap size={24} />
       </div>
       
-      <div>
-        <h3 className="text-xl font-bold text-gray-900">{degree}</h3>
-        <div className="flex flex-wrap items-center gap-2 mb-2">
-          <span className="font-medium text-blue-600">{institution}</span>
-          <span className="text-gray-500">{location}</span>
-        </div>
+      <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3 line-clamp-2">{degree}</h3>
+      
+      <div className="flex flex-col gap-3 mb-5">
+        <span className="font-semibold text-blue-600 dark:text-blue-400">{institution}</span>
         
-        <div className="flex items-center text-gray-500 mb-3">
-          <Calendar size={16} className="mr-1" />
-          <span>{period}</span>
+        <div className="flex items-center gap-4 text-sm font-medium text-slate-500 dark:text-slate-400">
+          {period && (
+            <div className="flex items-center bg-slate-100 dark:bg-slate-800 px-3 py-1 rounded-full">
+              <Calendar size={14} className="mr-2" />
+              <span>{period}</span>
+            </div>
+          )}
+          {location && <span>{location}</span>}
         </div>
-        
-        {description && (
-          <p className="text-gray-700">{description}</p>
-        )}
       </div>
+      
+      {description && (
+        <p className="text-slate-700 dark:text-slate-300 leading-relaxed text-sm md:text-base">
+          {description}
+        </p>
+      )}
     </div>
   );
 };
