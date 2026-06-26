@@ -117,7 +117,7 @@ const Index = () => {
             </h1>
             
             <h2 className="text-2xl md:text-3xl font-bold text-slate-700 dark:text-slate-300 mb-6 leading-relaxed">
-              Estudiante de Desarrollo de Software
+              Desarrollador de Software
               <span className="block text-xl font-medium text-slate-500 dark:text-slate-400 mt-2">Apasionado por la tecnología y la innovación</span>
             </h2>
             
@@ -244,7 +244,7 @@ const Index = () => {
                 Transformando ideas en experiencias digitales
               </h3>
               <p className="text-lg text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
-                Soy un estudiante de desarrollo de software apasionado por crear soluciones digitales que combinen excelencia técnica con diseño atractivo. 
+                Soy un desarrollador de software apasionado por crear soluciones digitales que combinen excelencia técnica con diseño atractivo. 
               </p>
               
               <p className="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
